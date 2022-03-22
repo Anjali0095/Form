@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+       <div style="height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center;">
+        <div class="form-wrap"> 
+            <form>
+                <h1>Sign Up</h1>
+                <div id="errorAlert" style="background: red;
+                height: 42px;
+                text-align: center;
+                display: none; justify-content: center; margin-bottom: 10px;
+                flex-direction: column;">
+                    <p>All Fields Are Required! </p>
+                </div>
+              <div id="successAlert" style="background-color: yellowgreen;
+              height: 42px;
+                text-align: center;
+                display: none; justify-content: center; margin-bottom: 10px;
+                flex-direction: column;" >
+                  <p>Successfully Sign Up</p>
+              </div>
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Username" id="username">
+            <input type="text" placeholder="Email" id="email">
+            <input type="text" placeholder="Password" id="Password">
+            <input type="text" placeholder="Confirm Password" id="confirmpassword">
+            <input type="button" value="Sign Up" id="none" onclick="signup()">
+        </form>
+        </div>
+    </div>
+        <style>
+            *{margin: 0; padding: 0;}
+            body {background: #ecf1f4 ; font-family: sans-serif;}
+       
+            .form-wrap{ width: 320px; background: #3e3d3d; padding: 40px 20px; box-sizing: border-box; position: fixed; translate: (-50%, -50%);}
+            h1{ text-align: center; color: #fff; font-family: normal; margin-bottom: 20px;}
+       
+            input{ width: 100%; background: none; border: 1px solid #fff; border-radius:  3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px;}
+       
+            input[type="button"]{background: yellowgreen; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px;}
+            input[type="button"]:hover {background: #a4b15c; transition: 6s;}
+       
+            ::placeholder{color: #fff;}
+       </style>
+       <script src="main.js"></script>
+    
+</body>
+</html>
+
+
