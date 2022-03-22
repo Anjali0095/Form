@@ -14,6 +14,7 @@ function signup() {
   ) {
     return (document.getElementById("errorAlert").style.display = "flex");
   }
+  document.getElementById("errorAlert").style.display = "none";
   document.getElementById("successAlert").style.display = "flex";
   setInterval(function () {
     location.reload();
